@@ -1,0 +1,126 @@
+/*BASIC*/
+html {height: auto; width: auto; margin: 0px; padding: 0px;}
+body {height: auto; width: auto; margin: 0px; padding: 0px;}
+
+h1 {color: white;}
+h1 {font-family: 'Pacifico', cursive; text-align: center; font-size: 80px; font-weight: lighter;}
+h2 {font-family: 'Pacifico', cursive; text-align: center; font-size: 40px;}
+
+a:link, a:visited {color: #111111; text-decoration: none;}
+
+
+
+/*GENERAL*/
+.section {}
+.section .header_text {z-index: 1;}
+
+
+
+.page {
+width: auto;
+min-height: 800px;
+}
+.gradient {
+position: absolute;
+width: 100%;
+height: 800px;
+padding: 0;
+margin: 0;
+opacity: 0.5;
+filter: alpha(opacity=50);
+}
+.gradient_red_yellow {
+background: #FF4136; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(65deg, #FF4136, #FFDC00); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(65deg, #FF4136, #FFDC00); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(65deg, #FF4136, #FFDC00); /* For Firefox 3.6 to 15 */
+background: linear-gradient(65deg, #FF4136, #FFDC00); /* Standard syntax */
+}
+
+.gradient_red_blue {
+background: #85144b; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(65deg, #85144b, #7FDBFF); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(65deg, #85144b, #7FDBFF); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(65deg, #85144b, #7FDBFF); /* For Firefox 3.6 to 15 */
+background: linear-gradient(65deg, #85144b, #7FDBFF); /* Standard syntax */
+}
+
+.gradient_green_yellow {
+background: #FF4136; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(65deg, #3D9970, #FFDC00); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(65deg, #3D9970, #FFDC00); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(65deg, #3D9970, #FFDC00); /* For Firefox 3.6 to 15 */
+background: linear-gradient(65deg, #3D9970, #FFDC00); /* Standard syntax */
+}
+
+.text_grad_purple_yellow {
+	background: -webkit-linear-gradient(65deg, #85144b, #FFDC00);
+  	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+
+.text_grad_green_yellow {
+	background: -webkit-linear-gradient(65deg, #3D9970, #FFDC00);
+  	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+}
+
+.header_text { padding-top: 0px; min-width: 100%; }
+
+
+/*FLEX*/
+.flex_container {display: flex; flex-wrap: wrap; align-items: center;}
+.flex_header_container {justify-content: center;}
+.flex_header_item {
+	min-width: 350px;
+	max-width: 600px;
+	z-index: 50;
+}
+.flex_header_item h2 {font-family: 'Rubik', cursive;}
+.flex_feature_item {
+	-webkit-transition: -webkit-transform .1s; /* Safari */
+	transition: transform .1s;
+
+	-webkit-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	transform: scale(1.0);
+}
+	.flex_feature_item:hover {
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+.flex_center {justify-content: center;}
+/*HEADER*/
+.header_quote {border-radius: 5px; padding: 20px;}
+.header_section {
+	background-image: url(images/background.jpg);
+	background-size: cover;
+}
+
+.second_section_container {}
+	/*FEATURED*/
+	.feature {
+		min-width: 250px;
+		max-width: 300px;
+		height: 400px;
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 40px;
+		padding-top: 10px;
+
+
+		-webkit-box-shadow: 9px 10px 39px -2px rgba(0,0,0,0.3);
+		-moz-box-shadow: 9px 10px 39px -2px rgba(0,0,0,0.3);
+		box-shadow: 9px 10px 39px -2px rgba(0,0,0,0.3);
+	}
+	.feature h2 {line-height: 0;font-weight: lighter;}
+	.feature p {text-align: center; margin: auto; max-width: 200px; font-weight: lighter;}
+	.feature .feature_image {width: 200px; height: 200px; margin: auto; border-radius: 200px; background-size: cover;}
+	.feature1 .feature_image {background-image: url(images/Joy_Qi.png);}
+	.feature2 .feature_image {background-image: url(images/hongdou.png);}
+	.feature3 .feature_image {background-image: url(images/jyoti.png);}
+	.feature4 .feature_image {background-image: url(images/aditi.png);}
+	.feature5 .feature_image {background-image: url(images/gokul.png);}
+	.feature6 .feature_image {background-image: url(images/divya.png);}
+	.feature7 .feature_image {background-image: url(images/marwa.png);}

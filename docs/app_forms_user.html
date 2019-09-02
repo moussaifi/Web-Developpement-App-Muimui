@@ -1,0 +1,213 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>forms.user &#8212; MuiMui 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="toolbox.email" href="app_toollbox_email.html" />
+    <link rel="prev" title="app.init" href="app_init.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-app.forms.user">
+<span id="forms-user"></span><h1>forms.user<a class="headerlink" href="#module-app.forms.user" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="app.forms.user.Forgot">
+<em class="property">class </em><code class="descclassname">app.forms.user.</code><code class="descname">Forgot</code><span class="sig-paren">(</span><em>formdata=&lt;class 'flask_wtf.form._Auto'&gt;</em>, <em>obj=None</em>, <em>prefix=''</em>, <em>csrf_context=None</em>, <em>secret_key=None</em>, <em>csrf_enabled=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/forms/user.html#Forgot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.forms.user.Forgot" title="Permalink to this definition">¶</a></dt>
+<dd><p>User forgot password form.</p>
+<dl class="attribute">
+<dt id="app.forms.user.Forgot.email">
+<code class="descname">email</code><em class="property"> = &lt;UnboundField(TextField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Email object&gt;], 'description': 'Email address'})&gt;</em><a class="headerlink" href="#app.forms.user.Forgot.email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.user.Login">
+<em class="property">class </em><code class="descclassname">app.forms.user.</code><code class="descname">Login</code><span class="sig-paren">(</span><em>formdata=&lt;class 'flask_wtf.form._Auto'&gt;</em>, <em>obj=None</em>, <em>prefix=''</em>, <em>csrf_context=None</em>, <em>secret_key=None</em>, <em>csrf_enabled=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/forms/user.html#Login"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.forms.user.Login" title="Permalink to this definition">¶</a></dt>
+<dd><p>User login form.</p>
+<dl class="attribute">
+<dt id="app.forms.user.Login.email">
+<code class="descname">email</code><em class="property"> = &lt;UnboundField(TextField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Email object&gt;], 'description': 'Email address'})&gt;</em><a class="headerlink" href="#app.forms.user.Login.email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.Login.password">
+<code class="descname">password</code><em class="property"> = &lt;UnboundField(PasswordField, (), {'validators': [&lt;wtforms.validators.Required object&gt;], 'description': 'Password'})&gt;</em><a class="headerlink" href="#app.forms.user.Login.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.user.Reset">
+<em class="property">class </em><code class="descclassname">app.forms.user.</code><code class="descname">Reset</code><span class="sig-paren">(</span><em>formdata=&lt;class 'flask_wtf.form._Auto'&gt;</em>, <em>obj=None</em>, <em>prefix=''</em>, <em>csrf_context=None</em>, <em>secret_key=None</em>, <em>csrf_enabled=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/forms/user.html#Reset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.forms.user.Reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>User reset password form.</p>
+<dl class="attribute">
+<dt id="app.forms.user.Reset.confirm">
+<code class="descname">confirm</code><em class="property"> = &lt;UnboundField(PasswordField, (), {'description': 'Confirm password'})&gt;</em><a class="headerlink" href="#app.forms.user.Reset.confirm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.Reset.password">
+<code class="descname">password</code><em class="property"> = &lt;UnboundField(PasswordField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Length object&gt;, &lt;wtforms.validators.EqualTo object&gt;], 'description': 'Password'})&gt;</em><a class="headerlink" href="#app.forms.user.Reset.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.user.SignUp">
+<em class="property">class </em><code class="descclassname">app.forms.user.</code><code class="descname">SignUp</code><span class="sig-paren">(</span><em>formdata=&lt;class 'flask_wtf.form._Auto'&gt;</em>, <em>obj=None</em>, <em>prefix=''</em>, <em>csrf_context=None</em>, <em>secret_key=None</em>, <em>csrf_enabled=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/forms/user.html#SignUp"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.forms.user.SignUp" title="Permalink to this definition">¶</a></dt>
+<dd><p>User sign up form.</p>
+<dl class="attribute">
+<dt id="app.forms.user.SignUp.confirm">
+<code class="descname">confirm</code><em class="property"> = &lt;UnboundField(PasswordField, (), {'description': 'Confirm password'})&gt;</em><a class="headerlink" href="#app.forms.user.SignUp.confirm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.SignUp.email">
+<code class="descname">email</code><em class="property"> = &lt;UnboundField(TextField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Email object&gt;, &lt;app.forms.user.Unique object&gt;], 'description': 'Email address'})&gt;</em><a class="headerlink" href="#app.forms.user.SignUp.email" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.SignUp.first_name">
+<code class="descname">first_name</code><em class="property"> = &lt;UnboundField(TextField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Length object&gt;], 'description': 'Name'})&gt;</em><a class="headerlink" href="#app.forms.user.SignUp.first_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.SignUp.last_name">
+<code class="descname">last_name</code><em class="property"> = &lt;UnboundField(TextField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Length object&gt;], 'description': 'Surname'})&gt;</em><a class="headerlink" href="#app.forms.user.SignUp.last_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.SignUp.password">
+<code class="descname">password</code><em class="property"> = &lt;UnboundField(PasswordField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Length object&gt;, &lt;wtforms.validators.EqualTo object&gt;], 'description': 'Password'})&gt;</em><a class="headerlink" href="#app.forms.user.SignUp.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="app.forms.user.SignUp.phone">
+<code class="descname">phone</code><em class="property"> = &lt;UnboundField(TextField, (), {'validators': [&lt;wtforms.validators.Required object&gt;, &lt;wtforms.validators.Length object&gt;], 'description': 'Phone number'})&gt;</em><a class="headerlink" href="#app.forms.user.SignUp.phone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="app.forms.user.Unique">
+<em class="property">class </em><code class="descclassname">app.forms.user.</code><code class="descname">Unique</code><span class="sig-paren">(</span><em>model</em>, <em>field</em>, <em>message</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/app/forms/user.html#Unique"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#app.forms.user.Unique" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom validator to check an object’s attribute
+is unique. For example users should not be able
+to create an account if the account’s email
+address is already in the database. This class
+supposes you are using SQLAlchemy to query the
+database.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">MuiMui</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">My code tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy.html">deploy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manage.html">manage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_models.html">app.models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_logger_setup.html">app.logger_setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_admin.html">app.admin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_init.html">app.init</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">forms.user</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_toollbox_email.html">toolbox.email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_views_main.html">app.views.main</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_views_user.html">app.views.user</a></li>
+<li class="toctree-l1"><a class="reference internal" href="app_views_error.html">app.views.error</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="app_init.html" title="previous chapter">app.init</a></li>
+      <li>Next: <a href="app_toollbox_email.html" title="next chapter">toolbox.email</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, muimui.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/app_forms_user.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

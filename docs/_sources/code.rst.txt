@@ -1,0 +1,5 @@
+API Documentation
+=================
+.. automodule:: app.admin
+	:members:
+	:undoc-members:

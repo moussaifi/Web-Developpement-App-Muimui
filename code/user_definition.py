@@ -1,0 +1,11 @@
+ec2_address = "54.185.154.149"
+user = "ec2-user"
+# user = "root"
+key_file = "/.ssh/muimui.pem"
+git_repo_owner = "MSDS698"
+git_repo_name = "product-analytics-group-project-muimui"
+# git_user_id = "dianewoodbridge"
+orig_coord = '37.7909,-122.3925'
+dest_coord = '37.7765,-122.4506'
+output_file_name = 'output.txt'
+git_oauth_token = "a7341f525e220c01cee7444eb1afd35ec92e0889"

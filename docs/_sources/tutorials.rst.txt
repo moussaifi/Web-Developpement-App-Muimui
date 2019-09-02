@@ -1,0 +1,18 @@
+My code tutorial
+================
+# Environment Setup
+
+We will be using a ubuntu image for hosting server to make things simple.
+Run the [setup script](setup.sh) to set up the *muimui* environment and install required dependencies.
+
+To make *muimui* conda environment available in jupyter run the following commands:
+```bash
+pip install ipykernel
+python -m ipykernel install --user --name muimui --display-name "muimui"
+```
+
+We are using this [Instagram scraper](https://github.com/rarcega/instagram-scraper)
+# muimui_sphinx
+
+
+Run $python deploy.py to deploy webapp in specified server in `user_definition.py`
